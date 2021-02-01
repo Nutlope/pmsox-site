@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import {
-  useMediaQuery,
+  // useMediaQuery,
   Grid,
-  ListItem,
-  ListItemAvatar,
-  ListItemText,
+  // ListItem,
+  // ListItemAvatar,
+  // ListItemText,
   Button,
-  colors,
+  // colors,
 } from '@material-ui/core';
-import { SectionHeader, IconAlternate } from 'components/molecules';
+import { SectionHeader } from 'components/molecules';
 
 const useStyles = makeStyles(theme => ({
   listItemAvatar: {
@@ -24,10 +24,10 @@ const Faq = props => {
   const { data, className, ...rest } = props;
   const classes = useStyles();
 
-  const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
+  // const theme = useTheme();
+  // const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  //   defaultMatches: true,
+  // });
 
   return (
     <div className={className} {...rest}>

@@ -8,20 +8,20 @@ import {
   Faq,
   Features,
   Hero,
-  Partners,
-  Pricings,
-  Reviews,
+  // Partners,
+  // Pricings,
+  // Reviews,
   Services,
-  Users,
+  // Users,
 } from './components';
 
 import {
   services,
-  partners,
+  // partners,
   props,
-  users,
-  pricings,
-  reviews,
+  // users,
+  // pricings,
+  // reviews,
   faq,
 } from './data';
 
