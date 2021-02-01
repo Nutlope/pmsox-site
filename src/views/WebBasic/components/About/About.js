@@ -42,12 +42,14 @@ const About = props => {
             title={
               <span>
                 Welcome to{' '}
-                <Typography component="span" variant="inherit" color="primary">TheFront.</Typography>
+                <Typography component="span" variant="inherit" color="primary">
+                  PMSox.
+                </Typography>
                 <br />
-                <span>Develop anything your business needs.</span>
+                <span>The place for your SOX testing needs.</span>
               </span>
             }
-            subtitle="Build a beautiful, modern website with flexible, fully customizable, atomic Material UI components."
+            subtitle="PmSOX will help you solve your testing needs by leveraging crowdtesting while saving you precious time."
             align="left"
             disableGutter
           />

@@ -30,18 +30,20 @@ const Hero = props => {
             title={
               <span>
                 Welcome to{' '}
-                <Typography component="span" variant="inherit" color="primary">TheFront.</Typography>
+                <Typography component="span" variant="inherit" color="primary">
+                  PMSox.
+                </Typography>
                 <br />
-                <span>Develop anything your business needs.</span>
+                <span>A marketplace for all your SOX testing.</span>
               </span>
             }
-            subtitle="Build a beautiful, modern website with flexible, fully customizable, atomic Material UI components."
+            subtitle="PmSOX will help you solve your testing needs by leveraging crowdtesting while saving you precious time."
             ctaGroup={[
               <Button variant="contained" color="primary" size="large">
-                View Pages
+                Learn More
               </Button>,
               <Button variant="outlined" color="primary" size="large">
-                Documentation
+                Get Started
               </Button>,
             ]}
             align={isMd ? 'left' : 'center'}
@@ -60,7 +62,7 @@ const Hero = props => {
         >
           <Image
             src="https://assets.maccarianagency.com/the-front/illustrations/mind-map.svg"
-            alt="TheFront Company"
+            alt="Mind-map"
             className={classes.image}
           />
         </Grid>

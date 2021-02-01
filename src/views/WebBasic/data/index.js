@@ -1,21 +1,21 @@
 export const services = [
   {
     icon: 'fas fa-layer-group',
-    title: 'Built for developers',
+    title: 'Built for SOX compliance',
     subtitle:
-      'TheFront is built to make your life easier. Variables, build tooling, documentation, and reusable components.',
+      ' We take care of sourcing testers, helping you finalize your test plan, and delivering a quality product in record times',
   },
   {
     icon: 'fab fa-sketch',
     title: 'Designed to be modern',
     subtitle:
-      'Designed with the latest design trends in mind. TheFront feels modern, minimal, and beautiful.',
+      'Designed with the latest SOX compliance regulations in mind. PmSOX uses advanced testers to get the job done.',
   },
   {
-    icon: 'fas fa-code',
-    title: 'Documentation for everything',
+    icon: 'fas fa-shipping-fast',
+    title: 'Built for speed',
     subtitle:
-      "We've written extensive documentation for components and tools, so you never have to reverse engineer anything.",
+      'PmSOX is built to make your life easier. Through crowdtesting, we deliver the fastest results on the market.',
   },
 ];
 
@@ -47,10 +47,10 @@ export const partners = [
 ];
 
 export const props = [
-  'Lifetime updates',
+  'Crowdtesting',
   'Tech support',
-  'Tons of assets',
-  'Integration ready',
+  'Quality guarantee',
+  'Free Project Management',
 ];
 
 export const users = [
@@ -71,7 +71,8 @@ export const users = [
     name: 'Google Drive',
   },
   {
-    logo: 'https://assets.maccarianagency.com/the-front/logos/google-ad-manager.svg',
+    logo:
+      'https://assets.maccarianagency.com/the-front/logos/google-ad-manager.svg',
     name: 'Google Ad Manager',
   },
   {
@@ -182,8 +183,10 @@ export const faq = [
 export const reviews = [
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
     },
     authorName: 'Veronica Adams',
     authorOccupation: 'Growth Marketer, Crealytics',
@@ -192,8 +195,10 @@ export const reviews = [
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini@2x.jpg 2x',
     },
     authorName: 'Akachi Luccini',
     authorOccupation: 'Lead Generation, Alternative Capital',
@@ -202,8 +207,10 @@ export const reviews = [
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/jack-smith.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
     },
     authorName: 'Jack Smith',
     authorOccupation: 'Head of Operations, Parkfield Commerce',
@@ -212,8 +219,10 @@ export const reviews = [
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
     },
     authorName: 'Veronica Adams',
     authorOccupation: 'Growth Marketer, Crealytics',
@@ -222,8 +231,10 @@ export const reviews = [
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini@2x.jpg 2x',
     },
     authorName: 'Akachi Luccini',
     authorOccupation: 'Lead Generation, Alternative Capital',
@@ -232,8 +243,10 @@ export const reviews = [
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/jack-smith.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
     },
     authorName: 'Jack Smith',
     authorOccupation: 'Head of Operations, Parkfield Commerce',

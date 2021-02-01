@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
           },
         },
       },
-    }
+    },
   },
   heroShaped: {
     '& .hero-shaped__image': {
@@ -54,7 +54,7 @@ const useStyles = makeStyles(theme => ({
     position: 'absolute',
     [theme.breakpoints.up('sm')]: {
       backgroundSize: '800px auto',
-    }
+    },
   },
   imageAnimationDark: {
     background: `url("https://assets.maccarianagency.com/the-front/web-screens/home/home-hero-bg-dark.png")`,
@@ -74,7 +74,7 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
 
   const title = (
     <Typography variant="h2" component="span" className={classes.fontWeight900}>
-      A modern design system for your new
+      A marketplace for all your SOX
       <br />
       <TypedText
         component="span"
@@ -83,26 +83,31 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
         className={classes.fontWeight900}
         typedProps={{
           strings: [
-            'e-commerce',
-            'expo',
-            'startup',
-            'online course',
-            'coworking space',
-            'job listing',
-            'and many more...',
+            'testing',
+            'compliance',
+            'IPO plans',
+            'deadlines',
+            'and more...',
           ],
-          typeSpeed: 50,
+          typeSpeed: 80,
           loop: true,
         }}
       />
     </Typography>
   );
 
-  const subtitle = 'TheFront will make your product look modern and professional while saving you precious time.';
+  const subtitle =
+    'PmSOX will help you solve your testing needs by leveraging crowdtesting while saving you precious time.';
 
   const docsButton = (
-    <Button size="large" variant="outlined" color="primary" component="a" href="/documentation">
-      Documentation
+    <Button
+      size="large"
+      variant="outlined"
+      color="primary"
+      component="a"
+      href="/career-listing"
+    >
+      Learn More
     </Button>
   );
 
@@ -138,14 +143,14 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
       <HeroShaped
         className={classes.heroShaped}
         leftSide={leftSideContent}
-        rightSide={(
+        rightSide={
           <div
             className={clsx(
               classes.imageAnimation,
-              themeMode === 'dark' ? classes.imageAnimationDark: '',
+              themeMode === 'dark' ? classes.imageAnimationDark : '',
             )}
           />
-        )}
+        }
       />
     </div>
   );

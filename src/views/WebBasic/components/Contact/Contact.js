@@ -99,10 +99,10 @@ const Contact = props => {
                 </Grid>
                 <Grid item xs={12}>
                   <FKTextField
-                    placeholder="Occupation"
-                    label="Occupation"
+                    placeholder="Industry"
+                    label="Industry"
                     size="medium"
-                    name="occupation"
+                    name="industry"
                     fullWidth
                     type="text"
                   />
@@ -132,15 +132,27 @@ const Contact = props => {
         >
           <Grid item>
             <SectionHeader
-              label="make things done"
+              label="we get things done"
               title={
                 <>
                   <span>
-                    The most useful resource
+                    The first marketplace
                     <br />
-                    <Typography color="secondary" variant="inherit" component="span">ever created</Typography>
+                    <Typography
+                      color="secondary"
+                      variant="inherit"
+                      component="span"
+                    >
+                      ever created
+                    </Typography>
                     <br />
-                    <Typography color="secondary" variant="inherit" component="span">for&nbsp;</Typography>
+                    <Typography
+                      color="secondary"
+                      variant="inherit"
+                      component="span"
+                    >
+                      for&nbsp;
+                    </Typography>
                   </span>
                   <TypedText
                     component="span"
@@ -148,14 +160,14 @@ const Contact = props => {
                     color="secondary"
                     className={classes.typed}
                     typedProps={{
-                      strings: ['web developers.', 'fouders.', 'designers.'],
-                      typeSpeed: 50,
+                      strings: ['SOX compliance.', 'crowdtesting.', 'testing.'],
+                      typeSpeed: 80,
                       loop: true,
                     }}
                   />
                 </>
               }
-              subtitle="Using TheFront to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier."
+              subtitle="Using PMSox for your SOX testing needs means never worrying about meeting a SOX deadline. Our talented testers and robust process will make your life easier."
               align="left"
               disableGutter
             />

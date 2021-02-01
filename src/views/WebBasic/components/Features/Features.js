@@ -7,7 +7,7 @@ import { SectionHeader, CountUpNumber } from 'components/molecules';
 
 const useStyles = makeStyles(theme => ({
   placementGrid: {
-    maxWidth: 320,
+    maxWidth: 375,
     width: '100%',
     display: 'flex',
     justifyContent: 'space-between',
@@ -39,12 +39,16 @@ const Features = props => {
                   <span>
                     Stay focused on your business.
                     <br />
-                    <Typography component="span" variant="inherit" color="primary">
-                      Let us handle the design.
+                    <Typography
+                      component="span"
+                      variant="inherit"
+                      color="primary"
+                    >
+                      Let us handle the SOX testing.
                     </Typography>
                   </span>
                 }
-                subtitle="You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for you."
+                subtitle="You have a business to run. Stop worrying about SOX compliance, test plans, and seasonal contractors. Let us do that for you."
                 align="left"
                 fadeUp
                 disableGutter
@@ -55,7 +59,7 @@ const Features = props => {
                 <div>
                   <CountUpNumber
                     end={99}
-                    label="Countries"
+                    label="Completion rate"
                     textColor="primary"
                     suffix="%"
                   />
@@ -70,10 +74,10 @@ const Features = props => {
                 </div>
                 <div>
                   <CountUpNumber
-                    end={80}
-                    label="Desks"
+                    end={25}
+                    label="of Experience"
                     textColor="primary"
-                    suffix="K +"
+                    suffix=" years"
                   />
                 </div>
               </div>

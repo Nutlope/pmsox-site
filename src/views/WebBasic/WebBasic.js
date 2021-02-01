@@ -54,10 +54,10 @@ const WebBasic = () => {
         <Services data={services} />
       </Section>
       <Divider />
-      <Section>
+      {/* <Section>
         <Partners data={partners} />
       </Section>
-      <Divider />
+      <Divider /> */}
       <SectionAlternate>
         <Contact data={props} />
       </SectionAlternate>
@@ -66,23 +66,25 @@ const WebBasic = () => {
           <About data={services} />
         </Section>
       </div>
-      <Section>
+      {/* <Section>
         <Users data={users} />
-      </Section>
-      <SectionAlternate>
+      </Section> */}
+      {/* <SectionAlternate>
         <Reviews data={reviews} />
-      </SectionAlternate>
+      </SectionAlternate> */}
       <Section>
         <Features />
       </Section>
-      <div className={classes.shape}>
-        <Section>
+      {/* <div className={classes.shape}> */}
+      {/* <Section>
           <Pricings data={pricings} />
-        </Section>
-        <Section className={classes.sectionNoPaddingTop}>
-          <Faq data={faq} />
-        </Section>
-      </div>
+        </Section> */}
+      <Divider />
+
+      <SectionAlternate className={classes.sectionNoPaddingTop}>
+        <Faq data={faq} />
+      </SectionAlternate>
+      {/* </div> */}
     </div>
   );
 };

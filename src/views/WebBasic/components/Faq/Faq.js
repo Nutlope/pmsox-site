@@ -32,7 +32,7 @@ const Faq = props => {
   return (
     <div className={className} {...rest}>
       <Grid container spacing={4}>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Grid container spacing={isMd ? 4 : 2}>
             {data.map((item, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
@@ -59,15 +59,16 @@ const Faq = props => {
               </Grid>
             ))}
           </Grid>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12}>
           <SectionHeader
-            title="Get TheFront and save your time."
-            subtitle="Build a beautiful, modern website with flexible, fully customizable, atomic Material UI components."
+            className={classes.listItemAvatar}
+            title="Book PMSOX and save your time."
+            subtitle="Get a wonderfully detailed dashboard with daily updates on your SOX project and a thorough test plan by the end."
             align="center"
             ctaGroup={[
               <Button color="primary" variant="contained" size="large">
-                Buy it now
+                Contact us now
               </Button>,
             ]}
             disableGutter
