@@ -1,8 +1,3 @@
-/**
- * Caution: Consider this file when using react-scripts
- * 
- * You may delete this file and its occurrences from the project filesystem if you are using GatsbyJS or NextJS version
- */
 import React from 'react';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
@@ -23,6 +18,6 @@ const App = () => {
       <Routes />
     </Router>
   );
-}
+};
 
 export default App;
