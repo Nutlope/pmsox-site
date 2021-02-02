@@ -114,7 +114,14 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...rest }) => {
+const Topbar = ({
+  themeMode,
+  themeToggler,
+  onSidebarOpen,
+  pages,
+  className,
+  ...rest
+}) => {
   const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -244,7 +251,11 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
         <a href="/" title="thefront">
           <Image
             className={classes.logoImage}
-            src={themeMode === 'light' ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg' : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'}
+            src={
+              themeMode === 'light'
+                ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
+                : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+            }
             alt="thefront"
             lazy={false}
           />
@@ -299,19 +310,14 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
               </Popover>
             </div>
           ))}
-          <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
-            <DarkModeToggler themeMode={themeMode} onClick={() => themeToggler()} />
-          </ListItem>
-          <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
-            <Button
-              variant="outlined"
-              component="a"
-              href="/documentation"
-            >
+          {/* <ListItem
+            className={clsx(classes.listItem, 'menu-item--no-dropdown')}
+          >
+            <Button variant="outlined" component="a" href="/documentation">
               Documentation
             </Button>
-          </ListItem>
-          <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
+          </ListItem> */}
+          {/* <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
             <Button
               variant="contained"
               color="primary"
@@ -322,6 +328,14 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
             >
               Buy Now
             </Button>
+          </ListItem> */}
+          <ListItem
+            className={clsx(classes.listItem, 'menu-item--no-dropdown')}
+          >
+            <DarkModeToggler
+              themeMode={themeMode}
+              onClick={() => themeToggler()}
+            />
           </ListItem>
         </List>
       </Hidden>

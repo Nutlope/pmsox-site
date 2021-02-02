@@ -28,28 +28,8 @@ const Main = ({ children, themeToggler, themeMode }) => {
           groupTitle: 'Services',
           pages: [
             {
-              title: 'Coworking',
-              href: '/coworking',
-            },
-            {
-              title: 'Rental',
-              href: '/rental',
-            },
-            {
               title: 'Job Listing',
               href: '/job-listing',
-            },
-            {
-              title: 'E-Learning',
-              href: '/e-learning',
-            },
-            {
-              title: 'E-commerce',
-              href: '/e-commerce',
-            },
-            {
-              title: 'Expo',
-              href: '/expo',
             },
           ],
         },
@@ -60,54 +40,14 @@ const Main = ({ children, themeToggler, themeMode }) => {
               title: 'Desktop App',
               href: '/desktop-app',
             },
-            {
-              title: 'Mobile App',
-              href: '/mobile-app',
-            },
           ],
         },
         web: {
           groupTitle: 'Web',
           pages: [
             {
-              title: 'Marketing',
-              href: '/',
-            },
-            {
-              title: 'Overview',
-              href: '/home',
-            },
-            {
               title: 'Basic',
               href: '/web-basic',
-            },
-            {
-              title: 'Service',
-              href: '/service',
-            },
-            {
-              title: 'Startup',
-              href: '/startup',
-            },
-            {
-              title: 'Enterprise',
-              href: '/enterprise',
-            },
-            {
-              title: 'Cloud Hosting',
-              href: '/cloud-hosting',
-            },
-            {
-              title: 'Agency',
-              href: '/agency',
-            },
-            {
-              title: 'Design Company',
-              href: '/design-company',
-            },
-            {
-              title: 'Logistics',
-              href: '/logistics',
             },
           ],
         },
@@ -121,16 +61,8 @@ const Main = ({ children, themeToggler, themeMode }) => {
           groupTitle: 'Career',
           pages: [
             {
-              title: 'Lising',
+              title: 'Listing',
               href: '/career-listing',
-            },
-            {
-              title: 'Lising Minimal',
-              href: '/career-listing-minimal',
-            },
-            {
-              title: 'Opening',
-              href: '/career-opening',
             },
           ],
         },
@@ -141,30 +73,14 @@ const Main = ({ children, themeToggler, themeMode }) => {
               title: 'Overview',
               href: '/help-center',
             },
-            {
-              title: 'Article',
-              href: '/help-center-article',
-            },
           ],
         },
         company: {
           groupTitle: 'Company',
           pages: [
             {
-              title: 'About',
-              href: '/about',
-            },
-            {
               title: 'About (Cover)',
               href: '/about-side-cover',
-            },
-            {
-              title: 'Pricing',
-              href: '/pricing',
-            },
-            {
-              title: 'Terms',
-              href: '/company-terms',
             },
           ],
         },
@@ -172,16 +88,8 @@ const Main = ({ children, themeToggler, themeMode }) => {
           groupTitle: 'Contact',
           pages: [
             {
-              title: 'Reach View',
-              href: '/contact-page',
-            },
-            {
               title: 'Sidebar Map',
               href: '/contact-sidebar-map',
-            },
-            {
-              title: 'Cover',
-              href: '/contact-page-cover',
             },
           ],
         },
@@ -192,18 +100,6 @@ const Main = ({ children, themeToggler, themeMode }) => {
               title: 'Newsroom',
               href: '/blog-newsroom',
             },
-            {
-              title: 'Reach View',
-              href: '/blog-reach-view',
-            },
-            {
-              title: 'Search',
-              href: '/blog-search',
-            },
-            {
-              title: 'Article',
-              href: '/blog-article',
-            },
           ],
         },
         portfolio: {
@@ -212,18 +108,6 @@ const Main = ({ children, themeToggler, themeMode }) => {
             {
               title: 'Basic',
               href: '/portfolio-page',
-            },
-            {
-              title: 'Masonry',
-              href: '/portfolio-masonry',
-            },
-            {
-              title: 'Grid View',
-              href: '/portfolio-grid',
-            },
-            {
-              title: 'Parallax Effect',
-              href: '/agency',
             },
           ],
         },
@@ -240,18 +124,6 @@ const Main = ({ children, themeToggler, themeMode }) => {
               title: 'General',
               href: '/account/?pid=general',
             },
-            {
-              title: 'Security',
-              href: '/account/?pid=security',
-            },
-            {
-              title: 'Notifications',
-              href: '/account/?pid=notifications',
-            },
-            {
-              title: 'Billing',
-              href: '/account/?pid=billing',
-            },
           ],
         },
         signup: {
@@ -260,10 +132,6 @@ const Main = ({ children, themeToggler, themeMode }) => {
             {
               title: 'Simple',
               href: '/signup-simple',
-            },
-            {
-              title: 'Cover',
-              href: '/signup-cover',
             },
           ],
         },
@@ -274,10 +142,6 @@ const Main = ({ children, themeToggler, themeMode }) => {
               title: 'Simple',
               href: '/signin-simple',
             },
-            {
-              title: 'Cover',
-              href: '/signin-cover',
-            },
           ],
         },
         password: {
@@ -287,10 +151,6 @@ const Main = ({ children, themeToggler, themeMode }) => {
               title: 'Simple',
               href: '/password-reset-simple',
             },
-            {
-              title: 'Cover',
-              href: '/password-reset-cover',
-            },
           ],
         },
         error: {
@@ -299,10 +159,6 @@ const Main = ({ children, themeToggler, themeMode }) => {
             {
               title: 'Simple',
               href: '/not-found',
-            },
-            {
-              title: 'Cover',
-              href: '/not-found-cover',
             },
           ],
         },
@@ -328,7 +184,12 @@ const Main = ({ children, themeToggler, themeMode }) => {
         [classes.root]: true,
       })}
     >
-      <Topbar onSidebarOpen={handleSidebarOpen} pages={pages} themeMode={themeMode} themeToggler={themeToggler} />
+      <Topbar
+        onSidebarOpen={handleSidebarOpen}
+        pages={pages}
+        themeMode={themeMode}
+        themeToggler={themeToggler}
+      />
       <Sidebar
         onClose={handleSidebarClose}
         open={open}

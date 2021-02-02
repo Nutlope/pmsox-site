@@ -11,7 +11,7 @@ import 'swiper/css/swiper.min.css';
 import 'aos/dist/aos.css';
 
 const browserHistory = createBrowserHistory();
-
+console.log('browserHistory', browserHistory);
 const App = () => {
   return (
     <Router history={browserHistory}>
