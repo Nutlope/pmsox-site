@@ -8,20 +8,12 @@ import {
   Faq,
   Features,
   Hero,
-  // Partners,
-  // Pricings,
-  // Reviews,
   Services,
-  // Users,
 } from './components';
 
 import {
   services,
-  // partners,
   props,
-  // users,
-  // pricings,
-  // reviews,
   faq,
 } from './data';
 
@@ -54,10 +46,6 @@ const WebBasic = () => {
         <Services data={services} />
       </Section>
       <Divider />
-      {/* <Section>
-        <Partners data={partners} />
-      </Section>
-      <Divider /> */}
       <SectionAlternate>
         <Contact data={props} />
       </SectionAlternate>
@@ -66,25 +54,13 @@ const WebBasic = () => {
           <About data={services} />
         </Section>
       </div>
-      {/* <Section>
-        <Users data={users} />
-      </Section> */}
-      {/* <SectionAlternate>
-        <Reviews data={reviews} />
-      </SectionAlternate> */}
       <Section>
         <Features />
       </Section>
-      {/* <div className={classes.shape}> */}
-      {/* <Section>
-          <Pricings data={pricings} />
-        </Section> */}
       <Divider />
-
       <SectionAlternate className={classes.sectionNoPaddingTop}>
         <Faq data={faq} />
       </SectionAlternate>
-      {/* </div> */}
     </div>
   );
 };

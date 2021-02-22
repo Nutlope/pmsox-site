@@ -11,7 +11,6 @@ import {
   Popover,
   Typography,
   IconButton,
-  // Button,
 } from '@material-ui/core';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -310,25 +309,6 @@ const Topbar = ({
               </Popover>
             </div>
           ))}
-          {/* <ListItem
-            className={clsx(classes.listItem, 'menu-item--no-dropdown')}
-          >
-            <Button variant="outlined" component="a" href="/documentation">
-              Documentation
-            </Button>
-          </ListItem> */}
-          {/* <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
-            <Button
-              variant="contained"
-              color="primary"
-              component="a"
-              target="blank"
-              href="https://material-ui.com/store/items/the-front-landing-page/"
-              className={classes.listItemButton}
-            >
-              Buy Now
-            </Button>
-          </ListItem> */}
           <ListItem
             className={clsx(classes.listItem, 'menu-item--no-dropdown')}
           >

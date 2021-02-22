@@ -11,7 +11,7 @@
 Description of the project files and directories.
 
 ```bash
-├── public/                    # Where react app builds production app
+├── public/                    # Where production app builds
 ├── src/                       # All app source files
 │   ├── assets                 # Some css and images
 │   ├── components             # Custom components on top of material-ui

@@ -9,7 +9,6 @@ import {
 
 import {
   Home as HomeView,
-  IndexView,
   Agency as AgencyView,
   CareerListing as CareerListingView,
   CareerListingMinimal as CareerListingMinimalView,
@@ -66,7 +65,7 @@ const Routes = () => {
         render={matchProps => (
           <WithLayout
             {...matchProps}
-            component={IndexView}
+            component={WebBasicView}
             layout={MainLayout}
           />
         )}
@@ -166,17 +165,6 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={ServiceView}
-            layout={MainLayout}
-          />
-        )}
-      />
-      <Route
-        exact
-        path="/web-basic"
-        render={matchProps => (
-          <WithLayout
-            {...matchProps}
-            component={WebBasicView}
             layout={MainLayout}
           />
         )}

@@ -190,6 +190,7 @@ const Main = ({ children, themeToggler, themeMode }) => {
         themeMode={themeMode}
         themeToggler={themeToggler}
       />
+      {/* Sidebar for small screens */}
       <Sidebar
         onClose={handleSidebarClose}
         open={open}
