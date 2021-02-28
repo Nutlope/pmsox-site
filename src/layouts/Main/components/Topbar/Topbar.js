@@ -12,6 +12,7 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Image, DarkModeToggler } from 'components/atoms';
+import logo_light from './Logo_transparent.png';
 
 const useStyles = makeStyles(theme => ({
   flexGrow: {
@@ -90,8 +91,9 @@ const useStyles = makeStyles(theme => ({
     },
   },
   logoImage: {
-    width: '100%',
-    height: '100%',
+    width: '120px',
+    height: '120px',
+    marginTop: '-42px',
   },
   menu: {
     display: 'flex',
@@ -129,14 +131,15 @@ const Topbar = ({
     <Toolbar disableGutters className={classes.toolbar} {...rest}>
       <div className={classes.logoContainer}>
         <a href="/" title="thefront">
+          {/* <img src={logo_light} alt="logo1" height="80px" width="80px"></img> */}
           <Image
             className={classes.logoImage}
             src={
               themeMode === 'light'
-                ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
+                ? logo_light
                 : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
             }
-            alt="thefront"
+            alt="logo"
             lazy={false}
           />
         </a>
