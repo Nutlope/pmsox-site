@@ -2,17 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Typography,
-  IconButton,
-  Grid,
-  List,
-  ListItem,
-} from '@material-ui/core';
+import { IconButton, Grid, List, ListItem } from '@material-ui/core';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import PinterestIcon from '@material-ui/icons/Pinterest';
+import logo_light from '../Topbar/Logo_trans_white.png';
 
 import { Image } from 'components/atoms';
 
@@ -41,8 +36,9 @@ const useStyles = makeStyles(theme => ({
     height: 32,
   },
   logoImage: {
-    width: '100%',
-    height: '100%',
+    width: '150px',
+    height: '150px',
+    marginTop: '-55px',
   },
   groupTitle: {
     textTransform: 'uppercase',
@@ -85,6 +81,7 @@ const useStyles = makeStyles(theme => ({
   menuGroupTitle: {
     textTransform: 'uppercase',
     color: 'white',
+    marginTop: '13px',
   },
   divider: {
     width: '100%',
@@ -99,112 +96,29 @@ const Footer = props => {
 
   const classes = useStyles();
 
-  const landings = pages.landings;
-  const supportedPages = pages.pages;
-  const account = pages.account;
-
-  const MenuGroup = props => {
-    const { item } = props;
-    return (
-      <List disablePadding className={classes.menuItem}>
-        <ListItem disableGutters className={classes.menuGroupItem}>
-          <Typography variant="body2" className={classes.menuGroupTitle}>
-            {item.groupTitle}
-          </Typography>
-        </ListItem>
-        {item.pages.map((page, i) => (
-          <ListItem disableGutters key={i} className={classes.menuGroupItem}>
-            <Typography
-              variant="body2"
-              component={'a'}
-              href={page.href}
-              className={clsx(classes.navLink, 'submenu-item')}
-            >
-              {page.title}
-            </Typography>
-          </ListItem>
-        ))}
-      </List>
-    );
-  };
-
-  const LandingPages = () => {
-    const { services, apps, web } = landings.children;
-    return (
-      <div className={classes.menu}>
-        <div>
-          <MenuGroup item={services} />
-          <MenuGroup item={apps} />
-        </div>
-        <div>
-          <MenuGroup item={web} />
-        </div>
-      </div>
-    );
-  };
-
-  const SupportedPages = () => {
-    const {
-      career,
-      helpCenter,
-      company,
-      contact,
-      blog,
-      portfolio,
-    } = supportedPages.children;
-    return (
-      <div className={classes.menu}>
-        <div>
-          <MenuGroup item={career} />
-          <MenuGroup item={helpCenter} />
-        </div>
-        <div>
-          <MenuGroup item={company} />
-          <MenuGroup item={contact} />
-        </div>
-        <div>
-          <MenuGroup item={blog} />
-          <MenuGroup item={portfolio} />
-        </div>
-      </div>
-    );
-  };
-
-  const AccountPages = () => {
-    const { settings, signup, signin, password, error } = account.children;
-    return (
-      <div className={classes.menu}>
-        <div>
-          <MenuGroup item={settings} />
-          <MenuGroup item={signup} />
-        </div>
-        <div>
-          <MenuGroup item={signin} />
-          <MenuGroup item={password} />
-          <MenuGroup item={error} />
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div {...rest} className={clsx(classes.root, className)}>
       <div className={classes.footerContainer}>
-        <Grid container spacing={4}>
-          <Grid item xs={12} md={2}>
+        <Grid container spacing={1} justify="center">
+          <Grid item xs={3}>
             <List disablePadding>
               <ListItem disableGutters className={classes.logoContainerItem}>
                 <div className={classes.logoContainer}>
-                  <a href="/" title="thefront">
-                    <Image
-                      className={classes.logoImage}
-                      src="https://assets.maccarianagency.com/the-front/logos/logo-negative.svg"
-                      alt="thefront"
-                      lazy={false}
-                    />
-                  </a>
+                  <Image
+                    className={classes.logoImage}
+                    src={logo_light}
+                    alt="thefront"
+                    lazy={false}
+                  />
                 </div>
               </ListItem>
+            </List>
+          </Grid>
+          <Grid item xs={3}>
+            <p className={classes.menuGroupTitle}>Copyright PmSOX 2021©</p>
+          </Grid>
+          <Grid item xs={3}>
+            <List disablePadding>
               <ListItem disableGutters>
                 <IconButton className={classes.socialIcon}>
                   <FacebookIcon className={classes.icon} />
@@ -220,19 +134,6 @@ const Footer = props => {
                 </IconButton>
               </ListItem>
             </List>
-          </Grid>
-          <Grid item xs={12} md={10} className={classes.menuListContainer}>
-            <Grid container spacing={0}>
-              <Grid item>
-                <LandingPages />
-              </Grid>
-              <Grid item>
-                <SupportedPages />
-              </Grid>
-              <Grid item>
-                <AccountPages />
-              </Grid>
-            </Grid>
           </Grid>
         </Grid>
       </div>
