@@ -13,18 +13,19 @@ export const useDarkMode = () => {
   const setMode = mode => {
     window.localStorage.setItem('themeMode', mode);
     setTheme(mode);
+    setMountedComponent(false);
   };
 
   const themeToggler = () => {
     themeMode === 'light' ? setMode('dark') : setMode('light');
   };
 
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem('themeMode');
-    localTheme ? setTheme(localTheme) : setMode('light');
-    setMountedComponent(true);
-    AOS.refresh();
-  }, []);
+  // useEffect(() => {
+  //   const localTheme = window.localStorage.getItem('themeMode');
+  //   localTheme ? setTheme(localTheme) : setMode('light');
+  //   setMountedComponent(true);
+  //   AOS.refresh();
+  // }, []);
 
   useEffect(() => {
     AOS.refresh();
@@ -33,7 +34,11 @@ export const useDarkMode = () => {
   return [themeMode, themeToggler, mountedComponent];
 };
 
-export default function WithLayout({ component: Component, layout: Layout, ...rest }) {
+export default function WithLayout({
+  component: Component,
+  layout: Layout,
+  ...rest
+}) {
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -51,7 +56,7 @@ export default function WithLayout({ component: Component, layout: Layout, ...re
 
   const [themeMode, themeToggler, mountedComponent] = useDarkMode();
 
-  if (!mountedComponent) return <div/>;
+  if (!mountedComponent) return <div />;
 
   return (
     <ThemeProvider theme={getTheme(themeMode)}>

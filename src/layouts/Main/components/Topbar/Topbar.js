@@ -83,9 +83,10 @@ const useStyles = makeStyles(theme => ({
     },
   },
   logoImage: {
-    width: '120px',
-    height: '120px',
-    marginTop: '-42px',
+    width: '140px',
+    height: '140px',
+    marginTop: '-52px',
+    marginLeft: '-28px',
   },
   menu: {
     display: 'flex',
