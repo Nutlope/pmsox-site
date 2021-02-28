@@ -67,13 +67,10 @@ const Team = props => {
 
   return (
     <div className={className} {...rest}>
-      <SectionHeader
-        title="Meet our team"
-        subtitle="After 3 days all of your offers will arrive and you will have another 7 days to select your new company."
-      />
+      <SectionHeader title="Meet our team" />
       <Grid container spacing={isMd ? 2 : 1}>
         {data.map((item, index) => (
-          <Grid item xs={6} sm={6} md={4} key={index} data-aos="fade-up">
+          <Grid item xs={6} sm={6} md={6} key={index} data-aos="fade-up">
             <CardBase className={classes.cardBase} liftUp>
               <ListItem disableGutters className={classes.listItem}>
                 <ListItemAvatar className={classes.listItemAvatar}>
