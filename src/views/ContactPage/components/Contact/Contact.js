@@ -9,9 +9,13 @@ import {
   Avatar,
 } from '@material-ui/core';
 import { SectionHeader } from 'components/molecules';
-import { HeroShaped, Map } from 'components/organisms';
+import { HeroShaped } from 'components/organisms';
+import { Form } from '../';
 
 const useStyles = makeStyles(() => ({
+  secHeader: {
+    marginTop: '-60px',
+  },
   map: {
     zIndex: 9,
   },
@@ -22,15 +26,16 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Contact = props => {
-  const { data, className, ...rest } = props;
+  const { className } = props;
   const classes = useStyles();
 
   return (
-    <div className={className} {...rest}>
+    <div className={className}>
       <HeroShaped
         leftSide={
           <div>
             <SectionHeader
+              className={classes.secHeader}
               title="Contact details"
               subtitle="Keep track of what's happening with your data, change permissions, and run reports against your data anywhere in the world. Keep track of what's happening with your data, change permissions."
               subtitleProps={{
@@ -108,11 +113,9 @@ const Contact = props => {
           </div>
         }
         rightSide={
-          <Map
-            center={[45.464211, 9.011383]}
-            pins={data}
-            className={classes.map}
-          />
+          <div styles={{ color: 'red' }}>
+            <Form />
+          </div>
         }
       />
     </div>

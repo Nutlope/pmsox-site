@@ -11,6 +11,10 @@ import {
 import { SectionHeader } from 'components/molecules';
 
 const useStyles = makeStyles(theme => ({
+  root: {
+    paddingTop: '45px',
+    // margin: '20px',
+  },
   form: {
     maxWidth: 550,
     margin: `0 auto`,
@@ -37,10 +41,9 @@ const Form = props => {
   });
 
   return (
-    <div className={className} {...rest}>
+    <div className={classes.root} {...rest}>
       <SectionHeader
         title="Can't find the answer you need?"
-        subtitle="Keep track of what's happening with your data, change permissions, and run reports against your data anywhere in the world. Keep track of what's happening with your data, change permissions."
         subtitleProps={{
           variant: 'body1',
           color: 'textPrimary',
@@ -49,7 +52,7 @@ const Form = props => {
         align={isMd ? 'center' : 'left'}
       />
       <div className={classes.form}>
-        <Grid container spacing={isMd ? 4 : 2}>
+        <Grid container spacing={2}>
           <Grid item xs={12} data-aos="fade-up">
             <Typography
               variant="subtitle1"

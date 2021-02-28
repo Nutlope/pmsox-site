@@ -49,7 +49,7 @@ const Hero = props => {
       <Section className={classes.section}>
         <SectionHeader
           title="Contact us"
-          subtitle="We are founded by a leading academic and researcher in the field of Industrial Systems Engineering."
+          subtitle="We are founded by a SOX Expert with over 26 years of professional experience."
           align="left"
           data-aos="fade-up"
           disableGutter
