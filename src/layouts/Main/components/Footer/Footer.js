@@ -13,10 +13,7 @@ import { Image } from 'components/atoms';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(6, 0),
-    [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(12, 0),
-    },
+    padding: theme.spacing(7, 0),
     background: theme.palette.background.footer,
   },
   footerContainer: {
