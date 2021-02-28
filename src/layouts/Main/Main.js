@@ -21,8 +21,9 @@ const Main = ({ children, themeToggler, themeMode }) => {
 
   const pages = {
     landings: {
-      title: 'Landings',
+      title: 'Home',
       id: 'landing-pages',
+      href: '/',
       children: {
         services: {
           groupTitle: 'Services',
@@ -54,8 +55,9 @@ const Main = ({ children, themeToggler, themeMode }) => {
       },
     },
     pages: {
-      title: 'Pages',
+      title: 'About Us',
       id: 'supported-pages',
+      href: '/about-side-cover',
       children: {
         career: {
           groupTitle: 'Career',
@@ -114,8 +116,9 @@ const Main = ({ children, themeToggler, themeMode }) => {
       },
     },
     account: {
-      title: 'Account',
+      title: 'Contact Us',
       id: 'account',
+      href: '/contact-sidebar-map',
       children: {
         settings: {
           groupTitle: 'Settings',
