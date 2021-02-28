@@ -57,7 +57,7 @@ const Main = ({ children, themeToggler, themeMode }) => {
     pages: {
       title: 'About Us',
       id: 'supported-pages',
-      href: '/about-side-cover',
+      href: '/about',
       children: {
         career: {
           groupTitle: 'Career',
@@ -118,7 +118,7 @@ const Main = ({ children, themeToggler, themeMode }) => {
     account: {
       title: 'Contact Us',
       id: 'account',
-      href: '/contact-sidebar-map',
+      href: '/contact-page',
       children: {
         settings: {
           groupTitle: 'Settings',

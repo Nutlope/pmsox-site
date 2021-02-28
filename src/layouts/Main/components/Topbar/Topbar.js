@@ -2,16 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Toolbar,
-  Hidden,
-  List,
-  ListItem,
-  Typography,
-  IconButton,
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import { Image, DarkModeToggler } from 'components/atoms';
+import { Toolbar, List, ListItem, Typography } from '@material-ui/core';
+import { Image } from 'components/atoms';
 import logo_light from './Logo_transparent.png';
 
 const useStyles = makeStyles(theme => ({
@@ -37,15 +29,14 @@ const useStyles = makeStyles(theme => ({
     '&:hover': {
       color: theme.palette.primary.dark,
     },
+    color: '#2d3748',
+    fontSize: '1rem',
+    fontFamily: 'Lato',
+    fontWeight: 400,
+    lineHeight: 1.5,
   },
   listItem: {
     cursor: 'pointer',
-    '&:hover > .menu-item, &:hover svg': {
-      color: theme.palette.primary.dark,
-    },
-    '&.menu-item--no-dropdown': {
-      paddingRight: 0,
-    },
   },
   listItemActive: {
     '&> .menu-item': {
@@ -57,6 +48,7 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2),
     whiteSpace: 'nowrap',
     textDecoration: 'none',
+    color: 'red',
   },
   listItemButton: {
     whiteSpace: 'nowrap',
@@ -131,61 +123,35 @@ const Topbar = ({
     <Toolbar disableGutters className={classes.toolbar} {...rest}>
       <div className={classes.logoContainer}>
         <a href="/" title="thefront">
-          {/* <img src={logo_light} alt="logo1" height="80px" width="80px"></img> */}
           <Image
             className={classes.logoImage}
-            src={
-              themeMode === 'light'
-                ? logo_light
-                : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-            }
+            src={logo_light}
             alt="logo"
             lazy={false}
           />
         </a>
       </div>
       <div className={classes.flexGrow} />
-      <Hidden smDown>
-        <List disablePadding className={classes.navigationContainer}>
-          {[landings, supportedPages, account].map((page, i) => (
-            <div key={page.id}>
-              <ListItem
-                aria-describedby={page.id}
-                className={clsx(classes.listItem)}
+      <List disablePadding className={classes.navigationContainer}>
+        {[landings, supportedPages, account].map((page, i) => (
+          <div key={page.id}>
+            <ListItem
+              aria-describedby={page.id}
+              className={clsx(classes.listItem)}
+            >
+              <Typography
+                variant="body1"
+                color="textPrimary"
+                className={clsx(classes.listItemText, 'menu-item')}
               >
-                <Typography
-                  variant="body1"
-                  color="textPrimary"
-                  className={clsx(classes.listItemText, 'menu-item')}
-                >
-                  {/* TODO: Style this thing */}
-                  <a className={classes.listItemText} href={page.href}>
-                    {page.title}
-                  </a>
-                </Typography>
-              </ListItem>
-            </div>
-          ))}
-          <ListItem
-            className={clsx(classes.listItem, 'menu-item--no-dropdown')}
-          >
-            <DarkModeToggler
-              themeMode={themeMode}
-              onClick={() => themeToggler()}
-            />
-          </ListItem>
-        </List>
-      </Hidden>
-      <Hidden mdUp>
-        <DarkModeToggler themeMode={themeMode} onClick={() => themeToggler()} />
-        <IconButton
-          className={classes.iconButton}
-          onClick={onSidebarOpen}
-          aria-label="Menu"
-        >
-          <MenuIcon />
-        </IconButton>
-      </Hidden>
+                <a href={page.href} className={classes.navLink}>
+                  {page.title}
+                </a>
+              </Typography>
+            </ListItem>
+          </div>
+        ))}
+      </List>
     </Toolbar>
   );
 };
