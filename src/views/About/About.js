@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Section } from 'components/organisms';
-import { Contact, Hero, Story, Team, WhoWeAre } from './components';
-import { team, mapData } from './data';
+import { Hero, Story, Team, WhoWeAre } from './components';
+import { team } from './data';
 
 const useStyles = makeStyles(theme => ({
   root: {
