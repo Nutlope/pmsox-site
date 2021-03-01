@@ -3,8 +3,9 @@ import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { Toolbar, List, ListItem, Typography } from '@material-ui/core';
-import { Image } from 'components/atoms';
+import { Image, DarkModeToggler } from 'components/atoms';
 import logo_dark from './Logo_transparent.png';
+import logo_light from './Logo_trans_white.png';
 
 const useStyles = makeStyles(theme => ({
   flexGrow: {
@@ -29,7 +30,8 @@ const useStyles = makeStyles(theme => ({
     '&:hover': {
       color: theme.palette.primary.dark,
     },
-    color: '#2d3748',
+    // color: '#2d3748', TODO: Implement this changing later
+    color: theme.palette.primary.dark,
     fontSize: '1rem',
     fontFamily: 'Lato',
     fontWeight: 400,
@@ -126,7 +128,7 @@ const Topbar = ({
         <a href="/" title="thefront">
           <Image
             className={classes.logoImage}
-            src={logo_dark}
+            src={themeMode === 'light' ? logo_dark : logo_light}
             alt="logo"
             lazy={false}
           />
@@ -152,6 +154,12 @@ const Topbar = ({
             </ListItem>
           </div>
         ))}
+        <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
+          <DarkModeToggler
+            themeMode={themeMode}
+            onClick={() => themeToggler()}
+          />
+        </ListItem>
       </List>
     </Toolbar>
   );
