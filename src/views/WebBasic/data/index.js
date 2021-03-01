@@ -3,7 +3,7 @@ export const services = [
     icon: 'fas fa-layer-group',
     title: 'Based on approved Testing Strategy',
     subtitle:
-      ' We take care of sourcing qualified testers, helping you finalize your test plans, and dispatching them to preselected qualified testers as per your testing strategy & your external auditor’s requirements',
+      'We take care of sourcing qualified testers, helping you finalize your test plans, and dispatching them to preselected qualified testers as per your testing strategy & your external auditor’s requirements',
   },
   {
     icon: 'fab fa-sketch',
@@ -16,6 +16,27 @@ export const services = [
     title: 'Built for speed',
     subtitle:
       'PmSOX is built to make your life easier. Through crowdtesting, we deliver the fastest results on the market.',
+  },
+];
+
+export const services2 = [
+  {
+    icon: 'fas fa-layer-group',
+    title: 'Speed of purpose',
+    subtitle:
+      'Achieve high productivity levels by tapping into an army of qualified testers, that we onboard for you to hit the ground running at the first hour of work. We establish a PMO for you to manage the Testing team, solve the routine roadblocks & ensure continuous progress.',
+  },
+  {
+    icon: 'fab fa-sketch',
+    title: 'On-demand testers',
+    subtitle:
+      'We provide you with access to hundreds of qualified & vetted SOX testers ready to hit the ground running in areas such as in the Business Process controls, ITGC, IT Apps or Entity level controls testing.',
+  },
+  {
+    icon: 'fas fa-shipping-fast',
+    title: 'Your role in the testing phase',
+    subtitle:
+      "You will be our PMO's point of contact for the initial setup of the Testing Project, confirmation of the testing strategy & an active participant in the daily status meetings, while enjoying our state of the art dashboard.",
   },
 ];
 
