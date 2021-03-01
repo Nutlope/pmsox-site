@@ -3,18 +3,25 @@ import dadpic from './avatar-1.jpg';
 
 export const team = [
   {
-    title: 'CTO / Co-founder',
-    authorPhoto: {
-      src: hassanpic,
-    },
-    authorName: 'Hassan El Mghari',
-  },
-  {
     title: 'CEO / Co-Founder',
     authorPhoto: {
       src: dadpic,
     },
     authorName: 'Omar El Mghari',
+  },
+  {
+    title: 'Marketplace Director',
+    authorPhoto: {
+      src: 'https://ca.slack-edge.com/T01K2TDTE1H-U01KSGQDM5W-64fbc38c780a-512',
+    },
+    authorName: 'Marcel Allweins',
+  },
+  {
+    title: 'CTO / Co-founder',
+    authorPhoto: {
+      src: hassanpic,
+    },
+    authorName: 'Hassan El Mghari',
   },
   {
     title: 'Data Analytics Director',
@@ -25,13 +32,6 @@ export const team = [
         'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
     },
     authorName: 'Markus Proesch',
-  },
-  {
-    title: 'Marketplace Director',
-    authorPhoto: {
-      src: 'https://ca.slack-edge.com/T01K2TDTE1H-U01KSGQDM5W-64fbc38c780a-512',
-    },
-    authorName: 'Marcel Allweins',
   },
 ];
 
