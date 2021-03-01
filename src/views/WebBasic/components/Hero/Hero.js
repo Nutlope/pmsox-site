@@ -37,7 +37,7 @@ const Hero = props => {
                 <span>A marketplace for all your SOX testing.</span>
               </span>
             }
-            subtitle="PmSOX will help you solve your testing needs by leveraging crowdtesting while saving you precious time."
+            subtitle="PmSox gets Controls Testing done in a matter of days instead of weeks."
             ctaGroup={[
               <Button variant="contained" color="primary" size="large">
                 Learn More

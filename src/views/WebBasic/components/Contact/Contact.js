@@ -167,7 +167,7 @@ const Contact = props => {
                   />
                 </>
               }
-              subtitle="Using PMSox for your SOX testing needs means never worrying about meeting a SOX deadline. Our talented testers and robust process will make your life easier."
+              subtitle="Using PMSox for your SOX testing needs means never worrying about meeting a SOX deadline. Our platform, talented testers and robust process will make the testing phase a pleasant experience."
               align="left"
               disableGutter
             />

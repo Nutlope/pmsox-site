@@ -1,15 +1,15 @@
 export const services = [
   {
     icon: 'fas fa-layer-group',
-    title: 'Built for SOX compliance',
+    title: 'Based on approved Testing Strategy',
     subtitle:
-      ' We take care of sourcing testers, helping you finalize your test plan, and delivering a quality product in record times',
+      ' We take care of sourcing qualified testers, helping you finalize your test plans, and dispatching them to preselected qualified testers as per your testing strategy & your external auditor’s requirements',
   },
   {
     icon: 'fab fa-sketch',
-    title: 'Designed to be modern',
+    title: 'Monitored by a dedicated PMO',
     subtitle:
-      'Designed with the latest SOX compliance regulations in mind. PmSOX uses advanced testers to get the job done.',
+      'We establish a dedicated PMO to manage the Testing team, solve routine roadblocks & ensure continuous progress reported on a real time basis directly on your dashboard.',
   },
   {
     icon: 'fas fa-shipping-fast',
@@ -48,9 +48,9 @@ export const partners = [
 
 export const props = [
   'Crowdtesting',
-  'Tech support',
-  'Quality guarantee',
-  'Free Project Management',
+  'Interactive Dashboard',
+  'Dedicated Testing PMO',
+  'Extensive Auditors Requirements',
 ];
 
 export const users = [

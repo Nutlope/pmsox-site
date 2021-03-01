@@ -37,18 +37,18 @@ const Features = props => {
               <SectionHeader
                 title={
                   <span>
-                    Stay focused on your business.
+                    Stay focused on your compliance Requirements.
                     <br />
                     <Typography
                       component="span"
                       variant="inherit"
                       color="primary"
                     >
-                      Let us handle the SOX testing.
+                      Let us handle the SOX testing piece.
                     </Typography>
                   </span>
                 }
-                subtitle="You have a business to run. Stop worrying about SOX compliance, test plans, and seasonal contractors. Let us do that for you."
+                subtitle="You have a business to run. Stop worrying about SOX compliance, test plans, and seasonal contractors. Let us handle that for you."
                 align="left"
                 fadeUp
                 disableGutter

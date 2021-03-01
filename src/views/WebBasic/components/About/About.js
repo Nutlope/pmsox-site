@@ -46,7 +46,7 @@ const About = props => {
                   PMSox.
                 </Typography>
                 <br />
-                <span>The place for your SOX testing needs.</span>
+                <span>The one stop shop for all your SOX testing needs.</span>
               </span>
             }
             subtitle="PmSOX will help you solve your testing needs by leveraging crowdtesting while saving you precious time."
