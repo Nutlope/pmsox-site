@@ -1,5 +1,6 @@
 import hassanpic from './headshot1.png';
 import dadpic from './avatar-1.jpg';
+import markus from './marcus.JPG';
 
 export const team = [
   {
@@ -26,10 +27,7 @@ export const team = [
   {
     title: 'Data Analytics Director',
     authorPhoto: {
-      src:
-        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith.jpg',
-      srcSet:
-        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
+      src: markus,
     },
     authorName: 'Markus Proesch',
   },
