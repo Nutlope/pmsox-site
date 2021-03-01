@@ -54,7 +54,7 @@ const Hero = props => {
       <Section className={classes.section}>
         <SectionHeader
           title="About us"
-          subtitle="We are founded by a SOX Expert with over 26 years of professional experience."
+          subtitle="We are founded by a team of talented professionals in compliance, engineering, data analytics, and marketplace platform design."
           align="left"
           data-aos="fade-up"
           disableGutter

@@ -18,7 +18,7 @@ const WhoWeAre = props => {
         <Grid item xs={12} sm={6} data-aos="fade-up">
           <SectionHeader
             title="Who are we?"
-            subtitle="Our sign up is dead simple. We only require your basic company information and what type of data storage you want. Our sign up is dead simple. We only require your basic company information and what type of data storage you want."
+            subtitle="We are a strong complementary team with deep domain expertise in SOX compliance with several SOX projects in our belt, an ambitious CTO, an expert of marketplaces design for efficiency & a data analytics expert. Our organization enables us to be your one stop shop for your SOX testing needs from start to finish."
             disableGutter
             align="left"
             subtitleProps={{
@@ -29,8 +29,8 @@ const WhoWeAre = props => {
         </Grid>
         <Grid item xs={12} sm={6} data-aos="fade-up">
           <SectionHeader
-            title="What’s up with the name?"
-            subtitle="We support bulk uploading via SQL, integrations with most data storage products, or you can use our API. Simply select where you'd like to transfer your data and we'll being the process of migrating it instantly."
+            title="What can we help you with?"
+            subtitle="We help you craft your testing strategy, keeping your external auditor in the loop, and then executing it in no time. We source the right pool & mix of testers that allow for maximal reliance by your external auditors.  You & external auditor have access to our interactive dashboard for SOX testing results on a real time, minute by minute."
             disableGutter
             align="left"
             subtitleProps={{

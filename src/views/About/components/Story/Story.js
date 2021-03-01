@@ -39,8 +39,8 @@ const Story = props => {
         >
           <div>
             <SectionHeader
-              title="Our story"
-              subtitle="If we're no longer the right solution for you, we'll allow you to export and take your data at anytime for any reason. If we're no longer the right solution for you, we'll allow you to export and take your data at anytime for any reason.If we're no longer the right solution for you, we'll allow you to export and take your data at anytime for any reason.If we're no longer the right solution for you, we'll allow you to export and take your data at anytime for any reason.If we're no longer the right solution for you, we'll allow you to export and take your data at anytime for any reason."
+              title="Our purpose"
+              subtitle="Whether a first-year SOX company or an old combatant, you need to test your key controls for design & operating effectiveness at least on a quarterly basis. That is a hectic phase in any SOX compliance assessment. It requires a large multidisciplinary team of testers for weeks to get the job done. We can handle it for you in matter of few days!"
               align="left"
               disableGutter
               subtitleProps={{
