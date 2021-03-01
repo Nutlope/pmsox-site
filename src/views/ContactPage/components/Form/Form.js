@@ -12,8 +12,7 @@ import { SectionHeader } from 'components/molecules';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    paddingTop: '45px',
-    // margin: '20px',
+    paddingTop: '40px',
   },
   form: {
     maxWidth: 550,
@@ -101,7 +100,6 @@ const Form = props => {
               name="message"
               fullWidth
               multiline
-              rows={4}
             />
           </Grid>
           <Grid item container justify="center" xs={12}>

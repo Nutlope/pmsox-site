@@ -97,7 +97,7 @@ const Hero = ({ themeMode = 'light', className, ...rest }) => {
   );
 
   const subtitle =
-    'PmSOX will help you solve your testing needs by leveraging crowdtesting while saving you precious time.';
+    'pmSOX will help you solve your testing needs by leveraging crowdtesting while saving you precious time.';
 
   const docsButton = (
     <Button

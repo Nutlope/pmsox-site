@@ -43,7 +43,7 @@ const About = props => {
               <span>
                 Welcome to{' '}
                 <Typography component="span" variant="inherit" color="primary">
-                  PMSox.
+                  pmSOX.
                 </Typography>
                 <br />
                 <span>The one stop shop for all your SOX testing needs.</span>

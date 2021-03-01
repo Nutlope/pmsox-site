@@ -35,9 +35,10 @@ const Contact = props => {
         leftSide={
           <div>
             <SectionHeader
+              styles={{ padding: '20px' }}
               className={classes.secHeader}
               title="Contact details"
-              subtitle="Keep track of what's happening with your data, change permissions, and run reports against your data anywhere in the world. Keep track of what's happening with your data, change permissions."
+              subtitle="Interested in learning more? Contact us."
               subtitleProps={{
                 variant: 'body1',
                 color: 'textPrimary',
@@ -56,7 +57,7 @@ const Contact = props => {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Phone"
-                  secondary="+39 659-657-0133"
+                  secondary="+1 215-220-5317"
                   primaryTypographyProps={{
                     variant: 'subtitle1',
                     color: 'textSecondary',
@@ -77,7 +78,7 @@ const Contact = props => {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Email"
-                  secondary="hi@maccarianagency.com"
+                  secondary="support@pmsox.com"
                   primaryTypographyProps={{
                     variant: 'subtitle1',
                     color: 'textSecondary',
@@ -98,7 +99,7 @@ const Contact = props => {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Head Office"
-                  secondary="Via E. Golla 4"
+                  secondary="New Jersey, US"
                   primaryTypographyProps={{
                     variant: 'subtitle1',
                     color: 'textSecondary',

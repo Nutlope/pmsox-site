@@ -112,7 +112,7 @@ const Footer = props => {
             </List>
           </Grid>
           <Grid item xs={3}>
-            <p className={classes.menuGroupTitle}>Copyright PmSOX 2021©</p>
+            <p className={classes.menuGroupTitle}>Copyright pmSOX 2021©</p>
           </Grid>
           <Grid item xs={3}>
             <List disablePadding>

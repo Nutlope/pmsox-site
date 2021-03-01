@@ -132,7 +132,7 @@ const Contact = props => {
         >
           <Grid item>
             <SectionHeader
-              label="we get things done"
+              label="we get testing done"
               title={
                 <>
                   <span>
@@ -167,7 +167,7 @@ const Contact = props => {
                   />
                 </>
               }
-              subtitle="Using PMSox for your SOX testing needs means never worrying about meeting a SOX deadline. Our platform, talented testers and robust process will make the testing phase a pleasant experience."
+              subtitle="Using pmSOX for your SOX testing needs means never worrying about meeting a SOX deadline. Our platform, talented testers and robust process will make the testing phase a pleasant experience."
               align="left"
               disableGutter
             />

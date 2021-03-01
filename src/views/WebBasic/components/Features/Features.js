@@ -48,7 +48,7 @@ const Features = props => {
                     </Typography>
                   </span>
                 }
-                subtitle="You have a business to run. Stop worrying about SOX compliance, test plans, and seasonal contractors. Let us handle that for you."
+                subtitle="You have a compliance program to run. Stop worrying about SOX compliance, test plans, and seasonal SOX consultants. Let us handle that for you."
                 align="left"
                 fadeUp
                 disableGutter
@@ -58,7 +58,7 @@ const Features = props => {
               <div className={classes.placementGrid}>
                 <div>
                   <CountUpNumber
-                    end={99}
+                    end={100}
                     label="Completion rate"
                     textColor="primary"
                     suffix="%"

@@ -31,13 +31,13 @@ const Hero = props => {
               <span>
                 Welcome to{' '}
                 <Typography component="span" variant="inherit" color="primary">
-                  PMSox.
+                  pmSOX.
                 </Typography>
                 <br />
                 <span>A marketplace for all your SOX testing.</span>
               </span>
             }
-            subtitle="PmSox gets Controls Testing done in a matter of days instead of weeks."
+            subtitle="pmSOX gets Controls Testing done in a matter of days instead of weeks."
             ctaGroup={[
               <Button variant="contained" color="primary" size="large">
                 Learn More

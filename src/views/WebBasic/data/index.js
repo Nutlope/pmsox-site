@@ -6,16 +6,16 @@ export const services = [
       'We take care of sourcing qualified testers, helping you finalize your test plans, and dispatching them to preselected qualified testers as per your testing strategy & your external auditor’s requirements',
   },
   {
+    icon: 'fas fa-shipping-fast',
+    title: 'Built for speed',
+    subtitle:
+      'pmSOX is built to make your life easier. Through crowdtesting, we deliver the fastest results on the market.',
+  },
+  {
     icon: 'fab fa-sketch',
     title: 'Monitored by a dedicated PMO',
     subtitle:
       'We establish a dedicated PMO to manage the Testing team, solve routine roadblocks & ensure continuous progress reported on a real time basis directly on your dashboard.',
-  },
-  {
-    icon: 'fas fa-shipping-fast',
-    title: 'Built for speed',
-    subtitle:
-      'PmSOX is built to make your life easier. Through crowdtesting, we deliver the fastest results on the market.',
   },
 ];
 
@@ -71,7 +71,7 @@ export const props = [
   'Crowdtesting',
   'Interactive Dashboard',
   'Dedicated Testing PMO',
-  'Extensive Auditors Requirements',
+  'External Auditors Requirements',
 ];
 
 export const users = [
