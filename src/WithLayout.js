@@ -13,19 +13,18 @@ export const useDarkMode = () => {
   const setMode = mode => {
     window.localStorage.setItem('themeMode', mode);
     setTheme(mode);
-    setMountedComponent(false);
   };
 
   const themeToggler = () => {
     themeMode === 'light' ? setMode('dark') : setMode('light');
   };
 
-  // useEffect(() => {
-  //   const localTheme = window.localStorage.getItem('themeMode');
-  //   localTheme ? setTheme(localTheme) : setMode('light');
-  //   setMountedComponent(true);
-  //   AOS.refresh();
-  // }, []);
+  useEffect(() => {
+    // const localTheme = window.localStorage.getItem('themeMode');
+    // localTheme ? setTheme(localTheme) : setMode('light');
+    setMountedComponent(true);
+    AOS.refresh();
+  }, []);
 
   useEffect(() => {
     AOS.refresh();
@@ -40,7 +39,6 @@ export default function WithLayout({
   ...rest
 }) {
   React.useEffect(() => {
-    // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
