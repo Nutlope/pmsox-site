@@ -37,7 +37,7 @@ const Hero = props => {
                 <span>A marketplace for all your SOX testing.</span>
               </span>
             }
-            subtitle="Testing controls is critical to an audit as it is used to support the audit firm’s opinion of the effectiveness of ICFR in an integrated audit and to modify the nature, timing, and extent of substantive testing in financial statement and integrated audits. pmSOX gets Controls Testing done in a matter of days instead of weeks."
+            subtitle="pmSOX gets Controls Testing done in a matter of days instead of weeks."
             ctaGroup={[
               <Button variant="contained" color="primary" size="large">
                 Learn More
