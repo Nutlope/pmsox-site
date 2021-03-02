@@ -11,6 +11,27 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
+const Twopara = () => {
+  return (
+    <div>
+      <p>
+        Whether a first-year SOX company or an old combatant, you need to test
+        your key controls for design & operating effectiveness at least on a
+        quarterly basis. That is a hectic phase in any SOX compliance
+        assessment. It requires a large multidisciplinary team of testers for
+        weeks to get the job done. We can handle it for you in matter of few
+        days!
+      </p>
+      <br></br>
+      <p>
+        Testing controls is critical to an audit as it is used to support the
+        audit firm’s opinion of the effectiveness of ICFR in an integrated audit
+        and to modify the nature, timing, and extent of substantive testing in
+        financial statement and integrated audits.
+      </p>
+    </div>
+  );
+};
 const Story = props => {
   const { className, ...rest } = props;
   const classes = useStyles();
@@ -40,7 +61,7 @@ const Story = props => {
           <div>
             <SectionHeader
               title="Our purpose"
-              subtitle="Whether a first-year SOX company or an old combatant, you need to test your key controls for design & operating effectiveness at least on a quarterly basis. That is a hectic phase in any SOX compliance assessment. It requires a large multidisciplinary team of testers for weeks to get the job done. We can handle it for you in matter of few days!"
+              subtitle=<Twopara />
               align="left"
               disableGutter
               subtitleProps={{
