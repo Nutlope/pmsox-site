@@ -18,7 +18,7 @@ export const team = [
     authorName: 'Marcel Allweins',
   },
   {
-    title: 'CTO / Co-founder',
+    title: 'Developer',
     authorPhoto: {
       src: hassanpic,
     },
