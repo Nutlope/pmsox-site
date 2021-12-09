@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import {
@@ -39,6 +40,15 @@ const Form = props => {
     defaultMatches: true,
   });
 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  function submitForm(e) {
+    e.preventDefault();
+    console.log('Form submitted');
+  }
+
   return (
     <div className={classes.root} {...rest}>
       <SectionHeader
@@ -67,6 +77,8 @@ const Form = props => {
               name="fullname"
               fullWidth
               type="text"
+              value={name}
+              onChange={e => setName(e.target.value)}
             />
           </Grid>
           <Grid item xs={12} data-aos="fade-up">
@@ -84,6 +96,8 @@ const Form = props => {
               name="email"
               fullWidth
               type="email"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
             />
           </Grid>
           <Grid item xs={12} data-aos="fade-up">
@@ -100,6 +114,8 @@ const Form = props => {
               name="message"
               fullWidth
               multiline
+              value={message}
+              onChange={e => setMessage(e.target.value)}
             />
           </Grid>
           <Grid item container justify="center" xs={12}>
@@ -108,6 +124,7 @@ const Form = props => {
               type="submit"
               color="primary"
               size="large"
+              onClick={submitForm}
             >
               submit
             </Button>
