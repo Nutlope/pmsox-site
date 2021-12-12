@@ -1,32 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Grid,
   ListItem,
   ListItemAvatar,
   Typography,
-  TextField,
-  Button,
   colors,
 } from '@material-ui/core';
-import { Image } from 'components/atoms';
 import { SectionHeader, IconAlternate, TypedText } from 'components/molecules';
-import { CardProduct } from 'components/organisms';
-
-const FKTextField = withStyles({
-  root: {
-    '& .MuiInput-underline:before': {
-      borderBottom: `1px solid ${colors.blueGrey[50]}`,
-    },
-    '& .MuiInput-underline:after': {
-      borderBottom: `1px solid ${colors.indigo[200]}`,
-    },
-    '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
-      borderBottom: `1px solid ${colors.indigo[200]}`,
-    },
-  },
-})(TextField);
 
 const useStyles = makeStyles(theme => ({
   typed: {
@@ -56,78 +38,9 @@ const Contact = props => {
         <Grid
           item
           container
-          justify="flex-start"
-          alignItems="center"
-          xs={12}
-          md={6}
-          data-aos="fade-up"
-        >
-          <CardProduct
-            className={classes.cardProduct}
-            withShadow
-            liftUp
-            mediaContent={
-              <Image
-                src="https://assets.maccarianagency.com/the-front/photos/coworking/place3.jpg"
-                srcSet="https://assets.maccarianagency.com/the-front/photos/coworking/place3@2x.jpg 2x"
-                alt="Contact cover"
-                className={classes.formCover}
-                lazy={false}
-              />
-            }
-            cardContent={
-              <Grid container spacing={4}>
-                <Grid item xs={12}>
-                  <FKTextField
-                    placeholder="Full Name"
-                    label="Full Name *"
-                    size="medium"
-                    name="fullname"
-                    fullWidth
-                    type="text"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <FKTextField
-                    placeholder="Email"
-                    label="Email *"
-                    size="medium"
-                    name="email"
-                    fullWidth
-                    type="email"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <FKTextField
-                    placeholder="Industry"
-                    label="Industry"
-                    size="medium"
-                    name="industry"
-                    fullWidth
-                    type="text"
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    fullWidth
-                    size="large"
-                  >
-                    Contact us
-                  </Button>
-                </Grid>
-              </Grid>
-            }
-          />
-        </Grid>
-        <Grid
-          item
-          container
           alignItems="center"
           justify="flex-end"
           xs={12}
-          md={6}
           data-aos="fade-up"
         >
           <Grid item>
@@ -143,28 +56,24 @@ const Contact = props => {
                       variant="inherit"
                       component="span"
                     >
-                      ever created
+                      ever created for&nbsp;
                     </Typography>
-                    <br />
-                    <Typography
-                      color="secondary"
-                      variant="inherit"
+                    <TypedText
                       component="span"
-                    >
-                      for&nbsp;
-                    </Typography>
+                      variant="h4"
+                      color="secondary"
+                      className={classes.typed}
+                      typedProps={{
+                        strings: [
+                          'SOX compliance.',
+                          'crowdtesting.',
+                          'testing.',
+                        ],
+                        typeSpeed: 80,
+                        loop: true,
+                      }}
+                    />
                   </span>
-                  <TypedText
-                    component="span"
-                    variant="h4"
-                    color="secondary"
-                    className={classes.typed}
-                    typedProps={{
-                      strings: ['SOX compliance.', 'crowdtesting.', 'testing.'],
-                      typeSpeed: 80,
-                      loop: true,
-                    }}
-                  />
                 </>
               }
               subtitle="Using pmSOX for your SOX testing needs means never worrying about meeting a SOX deadline. Our platform, talented testers and robust process will make the testing phase a pleasant experience."
