@@ -73,7 +73,7 @@ const Form = props => {
               placeholder="Your full name"
               variant="outlined"
               size="medium"
-              name="fullname"
+              name="name"
               fullWidth
               type="text"
               value={name}
@@ -134,9 +134,6 @@ const Form = props => {
 };
 
 Form.propTypes = {
-  /**
-   * External classes
-   */
   className: PropTypes.string,
 };
 
