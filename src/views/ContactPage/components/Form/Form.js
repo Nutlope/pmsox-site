@@ -44,11 +44,6 @@ const Form = props => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  function submitForm(e) {
-    e.preventDefault();
-    console.log('Form submitted');
-  }
-
   return (
     <div className={classes.root} {...rest}>
       <SectionHeader
@@ -60,7 +55,11 @@ const Form = props => {
         data-aos="fade-up"
         align={isMd ? 'center' : 'left'}
       />
-      <div className={classes.form}>
+      <form
+        className={classes.form}
+        method="POST"
+        action="https://getform.io/f/96471a44-a0a9-4189-819f-f790c5b594ab"
+      >
         <Grid container spacing={2}>
           <Grid item xs={12} data-aos="fade-up">
             <Typography
@@ -124,13 +123,12 @@ const Form = props => {
               type="submit"
               color="primary"
               size="large"
-              onClick={submitForm}
             >
               submit
             </Button>
           </Grid>
         </Grid>
-      </div>
+      </form>
     </div>
   );
 };

@@ -34,6 +34,7 @@
     "@material-ui/pickers": "^3.2.10",
     "@material-ui/styles": "^4.2.1",
     "aos": "^2.3.4",
+    "axios": "^0.24.0",
     "clsx": "^1.0.4",
     "history": "^4.9.0",
     "jarallax": "^1.12.1",
