@@ -4,6 +4,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { useMediaQuery, Grid, Button, Typography } from '@material-ui/core';
 import { Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   image: {
@@ -22,6 +23,12 @@ const Hero = props => {
     defaultMatches: true,
   });
 
+  let history = useHistory();
+
+  function handleClick() {
+    history.push('/contact-page');
+  }
+
   return (
     <div className={className} {...rest}>
       <Grid container justify="space-between" spacing={isMd ? 4 : 2}>
@@ -39,11 +46,13 @@ const Hero = props => {
             }
             subtitle="pmSOX gets Controls Testing done in a matter of days instead of weeks."
             ctaGroup={[
-              <Button variant="contained" color="primary" size="large">
+              <Button
+                variant="contained"
+                color="primary"
+                size="large"
+                onClick={handleClick}
+              >
                 Learn More
-              </Button>,
-              <Button variant="outlined" color="primary" size="large">
-                Get Started
               </Button>,
             ]}
             align={isMd ? 'left' : 'center'}

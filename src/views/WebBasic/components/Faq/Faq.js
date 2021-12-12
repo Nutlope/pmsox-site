@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Button } from '@material-ui/core';
 import { SectionHeader } from 'components/molecules';
-
+import { useHistory } from 'react-router-dom';
 const useStyles = makeStyles(theme => ({
   listItemAvatar: {
     marginRight: theme.spacing(2),
@@ -16,6 +16,12 @@ const Faq = props => {
   const { data, className, ...rest } = props;
   const classes = useStyles();
 
+  let history = useHistory();
+
+  function handleClick() {
+    history.push('/contact-page');
+  }
+
   return (
     <div className={className} {...rest}>
       <Grid container spacing={4}>
@@ -26,7 +32,12 @@ const Faq = props => {
             subtitle="Get a wonderfully detailed dashboard with daily updates on your SOX Testing project and an amazing turnaround testing time."
             align="center"
             ctaGroup={[
-              <Button color="primary" variant="contained" size="large">
+              <Button
+                color="primary"
+                variant="contained"
+                size="large"
+                onClick={handleClick}
+              >
                 Contact us now
               </Button>,
             ]}
