@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Routes from './Routes';
@@ -16,9 +16,6 @@ console.log('browserHistory', browserHistory);
 const App = () => {
   ReactGA.initialize('UA-215866314-1');
   ReactGA.pageview(window.location.pathname + window.location.search);
-  //   useEffect(() => {
-  //     ReactGA.pageview(window.location.pathname);
-  //   }, []);
   return (
     <Router history={browserHistory}>
       <Routes />
