@@ -13,7 +13,7 @@ import 'aos/dist/aos.css';
 const browserHistory = createBrowserHistory();
 console.log('browserHistory', browserHistory);
 
-const TRACKING_ID = 'G-T6NVVJXMZ8';
+const TRACKING_ID = 'UA-215866314-1';
 ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
