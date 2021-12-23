@@ -45,6 +45,7 @@
     "react": "^16.13.1",
     "react-countup": "^4.3.3",
     "react-dom": "^16.8.6",
+    "react-ga": "^3.3.0",
     "react-lazy-load-image-component": "^1.5.0",
     "react-leaflet": "^2.7.0",
     "react-router-dom": "^5.0.1",
