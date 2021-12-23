@@ -13,13 +13,12 @@ import 'aos/dist/aos.css';
 const browserHistory = createBrowserHistory();
 console.log('browserHistory', browserHistory);
 
-const TRACKING_ID = 'UA-215866314-1';
-ReactGA.initialize(TRACKING_ID);
-
 const App = () => {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
+  ReactGA.initialize('UA-215866314-1');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+  //   useEffect(() => {
+  //     ReactGA.pageview(window.location.pathname);
+  //   }, []);
   return (
     <Router history={browserHistory}>
       <Routes />
