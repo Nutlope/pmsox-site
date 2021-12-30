@@ -57,7 +57,7 @@ const Contact = props => {
                 </ListItemAvatar>
                 <ListItemText
                   primary="Phone"
-                  secondary="+1 215-220-5317"
+                  secondary="+1 856-214-1924"
                   primaryTypographyProps={{
                     variant: 'subtitle1',
                     color: 'textSecondary',
