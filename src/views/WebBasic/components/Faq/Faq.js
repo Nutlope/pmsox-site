@@ -29,7 +29,7 @@ const Faq = props => {
           <SectionHeader
             className={classes.listItemAvatar}
             title="Start Today For a Great SOX testing experience."
-            subtitle="Get a wonderfully detailed dashboard with daily updates on your SOX Testing project and an amazing turnaround testing time."
+            subtitle="Get a wonderfully detailed dashboard with daily updates on your SOX Testing project progress and an amazing turnaround testing time."
             align="center"
             ctaGroup={[
               <Button

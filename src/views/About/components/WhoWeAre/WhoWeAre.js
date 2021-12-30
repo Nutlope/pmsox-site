@@ -30,7 +30,7 @@ const WhoWeAre = props => {
         <Grid item xs={12} sm={6} data-aos="fade-up">
           <SectionHeader
             title="What can we help you with?"
-            subtitle="We help you craft your testing strategy, keeping your external auditor in the loop, and then executing it in no time. We source the right pool & mix of testers that allow for maximal reliance by your external auditors.  You & external auditor have access to our interactive dashboard for SOX testing results on a real time, minute by minute."
+            subtitle="We help you craft your testing strategy, keeping your external auditor in the loop, and then executing it in no time. We source the right pool & mix of testers that allow for maximal reliance by your external auditors.  You & external auditor have access to our interactive dashboard for SOX testing results on a real time basis."
             disableGutter
             align="left"
             subtitleProps={{

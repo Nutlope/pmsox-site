@@ -4,7 +4,7 @@ import markus from './marcus.JPG';
 
 export const team = [
   {
-    title: 'CEO / Co-Founder',
+    title: 'CEO / Founder',
     authorPhoto: {
       src: dadpic,
     },

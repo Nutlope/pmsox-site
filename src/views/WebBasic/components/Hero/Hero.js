@@ -44,7 +44,7 @@ const Hero = props => {
                 <span>A marketplace for all your SOX testing.</span>
               </span>
             }
-            subtitle="pmSOX gets Controls Testing done in a matter of days instead of weeks."
+            subtitle="pmSOX gets Controls Testing done in a matter of hours instead of weeks."
             ctaGroup={[
               <Button
                 variant="contained"

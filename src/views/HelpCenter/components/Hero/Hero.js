@@ -88,7 +88,7 @@ const Hero = props => {
       <Section className={classes.section}>
         <SectionHeader
           title="What Do You Need?"
-          subtitle="We are founded by a leading academic and researcher in the field of Industrial Systems Engineering."
+          subtitle="We are founded by a leading practionner and researcher in the field of SOX Compliance."
           align="left"
           data-aos="fade-up"
           titleProps={{
