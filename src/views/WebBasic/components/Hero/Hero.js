@@ -5,7 +5,6 @@ import { useMediaQuery, Grid, Button, Typography } from '@material-ui/core';
 import { Image } from 'components/atoms';
 import { SectionHeader } from 'components/molecules';
 import { useHistory } from 'react-router-dom';
-import Calendly from 'views/ContactPage/Calendly';
 
 const useStyles = makeStyles(theme => ({
   image: {
@@ -55,12 +54,9 @@ const Hero = props => {
               >
                 Learn More
               </Button>,
-              <a href="www.google.com">
-                {' '}
-                <Button variant="outlined" color="primary" size="large">
-                  Get In touch
-                </Button>
-              </a>,
+              <Button variant="outlined" color="primary" size="large">
+                <a href="https://calendly.com/sas70">Get In touch</a>
+              </Button>,
             ]}
             align={isMd ? 'left' : 'center'}
             disableGutter
