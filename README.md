@@ -18,10 +18,8 @@ Description of the project files and directories.
 │   │   ├── Atoms              # Standalone small components
 │   │   ├── Molecules          # Components that rely on other components
 │   │   ├── Organisms          # Big components with multiple smaller ones
-│   ├── layouts                # 3 different layouts
-│   │   ├── DocsLayout         # Layouts similar to docs
+│   ├── layouts                # The layouts
 │   │   ├── Main               # The main layout
-│   │   ├── Minimal            # A minimal layout
 │   ├── theme                  # Color palette for light and dark themes
 │   ├── views                  # All the pages in the template
 │   ├── App.js                 # Main App.js file

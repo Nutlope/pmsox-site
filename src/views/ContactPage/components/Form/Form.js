@@ -60,7 +60,7 @@ const Form = props => {
         method="POST"
         action="https://getform.io/f/96471a44-a0a9-4189-819f-f790c5b594ab"
       >
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           <Grid item xs={12} data-aos="fade-up">
             <Typography
               variant="subtitle1"
@@ -114,6 +114,7 @@ const Form = props => {
               fullWidth
               multiline
               value={message}
+              rows={2}
               onChange={e => setMessage(e.target.value)}
             />
           </Grid>
