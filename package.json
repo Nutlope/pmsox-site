@@ -5,6 +5,7 @@
   "version": "3.2.1",
   "private": true,
   "scripts": {
+    "dev": "nodemon server.js",
     "start": "react-scripts start",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "prettier": "prettier --write '**/*.{js,css,html}'",

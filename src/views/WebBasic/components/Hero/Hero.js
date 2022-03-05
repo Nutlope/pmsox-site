@@ -55,7 +55,7 @@ const Hero = props => {
                 Learn More
               </Button>,
               <Button variant="outlined" color="primary" size="large">
-                <a href="https://calendly.com/sas70">Get In touch</a>
+                <a href="https://calendly.com/sas70/testing-30-min">Get In touch</a>
               </Button>,
             ]}
             align={isMd ? 'left' : 'center'}
