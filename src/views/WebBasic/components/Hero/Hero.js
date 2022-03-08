@@ -50,12 +50,21 @@ const Hero = props => {
                 variant="contained"
                 color="primary"
                 size="large"
-                onClick={handleClick}
+                // onClick={handleClick}
               >
-                Learn More
+                <a href="https://pmsox.breezy.hr/?">Open Projects</a>
               </Button>,
+
               <Button variant="outlined" color="primary" size="large">
-                <a href="https://calendly.com/sas70/testing-30-min">Get In touch</a>
+                <a href="https://calendly.com/sas70/testing-30-min">
+                  Book a meeting
+                </a>
+              </Button>,
+
+              <Button variant="outlined" color="primary" size="large">
+                <a href="https://calendly.com/sas70/testing-30-min">
+                  Instant Quote
+                </a>
               </Button>,
             ]}
             align={isMd ? 'left' : 'center'}
