@@ -48,7 +48,7 @@ const Hero = props => {
             ctaGroup={[
               <Button
                 variant="contained"
-                color="primary"
+                color="secondary"
                 size="large"
                 // onClick={handleClick}
               >
@@ -62,7 +62,7 @@ const Hero = props => {
               </Button>,
 
               <Button variant="outlined" color="primary" size="large">
-                <a href="https://calendly.com/sas70/testing-30-min">
+                <a href="https://pmsox.breezy.hr/p/4b11ee7e4acc-customer-success/apply">
                   Instant Quote
                 </a>
               </Button>,
