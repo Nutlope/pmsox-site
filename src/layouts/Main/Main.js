@@ -115,6 +115,11 @@ const Main = ({ children, themeToggler, themeMode }) => {
         },
       },
     },
+    testers: {
+      title: 'For Testers',
+      id: 'testers-pages',
+      href: 'https://pmsox.breezy.hr/?',
+    },
     account: {
       title: 'Contact Us',
       id: 'account',
