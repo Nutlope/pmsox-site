@@ -121,6 +121,7 @@ const Topbar = ({
   const landings = pages.landings;
   const supportedPages = pages.pages;
   const account = pages.account;
+  const testers = pages.testers;
 
   return (
     <Toolbar disableGutters className={classes.toolbar} {...rest}>
@@ -136,7 +137,7 @@ const Topbar = ({
       </div>
       <div className={classes.flexGrow} />
       <List disablePadding className={classes.navigationContainer}>
-        {[landings, supportedPages, account].map((page, i) => (
+        {[landings, supportedPages, account, testers].map((page, i) => (
           <div key={page.id}>
             <ListItem
               aria-describedby={page.id}
