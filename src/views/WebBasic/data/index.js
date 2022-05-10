@@ -190,7 +190,7 @@ export const faq = [
     title: 'Show me the money!',
     subtitle: 'Our new key fobs make it so easy!',
     text:
-      'Please note this is not an immediate job offer, nor a Full-Time position. So no compensation information is available at this stage, however we pay competitive market rates.PMSOX is a 100% virtual freelancer marketplace that matches SOX consultants & auditors to clients worldwide. This is a highly specialized & professional global marketplace & by applying to this position, you agree that we retain your profile information & use it to match you with clients projects in the future. Please note this is not an immediate job offer. So no compensation information is available at this stage, however we pay competitive market rates.',
+      'Please note this is not an immediate job offer, nor a Full-Time position. So no compensation information is available at this stage, however we pay competitive market rates.PMSOX is a 100% virtual freelancer marketplace that matches SOX consultants & auditors to clients worldwide. This is a highly specialized & professional global marketplace & by applying to this position, you agree that we retain your profile information & use it to match you with clients projects in the future.',
     link: 'Check it out',
   },
   {
@@ -232,6 +232,40 @@ export const faq = [
     subtitle: 'Our new key fobs make it so easy!',
     text:
       'Once you complete registration, you will have access to our portal, some training / coaching around SOX & the PMSOX App, as well as the available  SOX opportunities as they are updated.',
+    link: 'Check it out',
+  },
+  {
+    id: 'faq-11',
+    title:
+      'How does it work? do you have openings? are you looking for freelancers to be on your projects Are they going to be onsite or remote?',
+    subtitle: 'Our new key fobs make it so easy!',
+    text:
+      "We use qualified SOX testers & auditors to crowd-test clients' controls, pricing on a per control basis so that both clients & freelancers know exactly what you're getting or paying for. We provide SOX / Audit as a service and as such we are a one stop shop for clients when it comes to Testing, Reviewing, SME, Track leads , PM or SOX PMO roles, all around testing internal controls. We work exclusively remotely leveraging our platform dedicated to enabling remote & virtual SOX / Audit testing work.",
+    link: 'Check it out',
+  },
+  {
+    id: 'faq-12',
+    title:
+      'My Public Accounting experience is 25 years long and do not have SOX Testing experience, but have some Internal Controls Experience...Your Thoghts please',
+    subtitle: 'Our new key fobs make it so easy!',
+    text:
+      'SOX experience is not required but with an accounting or auditing background, consultants are in general ready to perform testing of internal controls. Also, our testers are supervised by senior reviewers with the proper SOX experience and they coach testers throughout the assignments. So I encourage you to apply',
+    link: 'Check it out',
+  },
+  {
+    id: 'faq-13',
+    title: 'How do I know this is legit?',
+    subtitle: 'Our new key fobs make it so easy!',
+    text:
+      'Completely understood. Alternatively you can go to our website pmsox.Com and apply from there by clicking on the “Open Projects” button or send me a LinkedIn message and I will reply back with a link to use to apply.',
+    link: 'Check it out',
+  },
+  {
+    id: 'faq-14',
+    title: 'Thanks, but, no thanks. Thank you,',
+    subtitle: 'Our new key fobs make it so easy!',
+    text:
+      'Just let us know and you will be successfully unsubscribed from our e-mail list. We’re sad to see you go, but we respect your choice & we sincerely apologize for any inconvenience. I wish you the best :-)',
     link: 'Check it out',
   },
 ];
