@@ -260,14 +260,6 @@ export const faq = [
       'Completely understood. Alternatively you can go to our website pmsox.Com and apply from there by clicking on the “Open Projects” button or send me a LinkedIn message and I will reply back with a link to use to apply.',
     link: 'Check it out',
   },
-  {
-    id: 'faq-14',
-    title: 'Thanks, but, no thanks. Thank you,',
-    subtitle: 'Our new key fobs make it so easy!',
-    text:
-      'Just let us know and you will be successfully unsubscribed from our e-mail list. We’re sad to see you go, but we respect your choice & we sincerely apologize for any inconvenience. I wish you the best :-)',
-    link: 'Check it out',
-  },
 ];
 
 export const reviews = [
