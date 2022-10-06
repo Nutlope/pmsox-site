@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
+import { Divider, useMediaQuery } from '@material-ui/core';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { useMediaQuery, Divider } from '@material-ui/core';
-import { Topbar, Footer, Sidebar } from './components';
+import clsx from 'clsx';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+import { Footer, Sidebar, Topbar } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -119,6 +119,11 @@ const Main = ({ children, themeToggler, themeMode }) => {
       title: 'For Testers',
       id: 'testers-pages',
       href: 'https://pmsox.breezy.hr/?',
+    },
+    pricing: {
+      title: 'Pricing Plans',
+      id: 'pricing',
+      href: 'https://pmsox-pricing.vercel.app/',
     },
     account: {
       title: 'Contact Us',

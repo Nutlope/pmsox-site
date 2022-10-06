@@ -1,9 +1,8 @@
-import React from 'react';
-import clsx from 'clsx';
-import PropTypes from 'prop-types';
+import { List, ListItem, Toolbar, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Toolbar, List, ListItem, Typography } from '@material-ui/core';
-import { Image, DarkModeToggler } from 'components/atoms';
+import clsx from 'clsx';
+import { DarkModeToggler, Image } from 'components/atoms';
+import PropTypes from 'prop-types';
 import logo_dark from './Logo_transparent.png';
 import logo_light from './Logo_trans_white.png';
 
@@ -122,6 +121,7 @@ const Topbar = ({
   const supportedPages = pages.pages;
   const account = pages.account;
   const testers = pages.testers;
+  const pricing = pages.pricing;
 
   return (
     <Toolbar disableGutters className={classes.toolbar} {...rest}>
@@ -137,24 +137,26 @@ const Topbar = ({
       </div>
       <div className={classes.flexGrow} />
       <List disablePadding className={classes.navigationContainer}>
-        {[landings, supportedPages, account, testers].map((page, i) => (
-          <div key={page.id}>
-            <ListItem
-              aria-describedby={page.id}
-              className={clsx(classes.listItem)}
-            >
-              <Typography
-                variant="body1"
-                color="textPrimary"
-                className={clsx(classes.listItemText, 'menu-item')}
+        {[landings, supportedPages, account, testers, pricing].map(
+          (page, i) => (
+            <div key={page.id}>
+              <ListItem
+                aria-describedby={page.id}
+                className={clsx(classes.listItem)}
               >
-                <a href={page.href} className={classes.navLink}>
-                  {page.title}
-                </a>
-              </Typography>
-            </ListItem>
-          </div>
-        ))}
+                <Typography
+                  variant="body1"
+                  color="textPrimary"
+                  className={clsx(classes.listItemText, 'menu-item')}
+                >
+                  <a href={page.href} className={classes.navLink}>
+                    {page.title}
+                  </a>
+                </Typography>
+              </ListItem>
+            </div>
+          ),
+        )}
         <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
           <DarkModeToggler
             themeMode={themeMode}
