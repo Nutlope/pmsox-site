@@ -55,9 +55,15 @@ const Hero = props => {
                 <a href="https://pmsox.breezy.hr/?">Open Projects</a>
               </Button>,
 
+              // <Button variant="outlined" color="primary" size="large">
+              //   <a href="https://calendly.com/sas70/testing-30-min">
+              //     Book a meeting
+              //   </a>
+              // </Button>,
+
               <Button variant="outlined" color="primary" size="large">
-                <a href="https://calendly.com/sas70/testing-30-min">
-                  Book a meeting
+                <a href="https://www.youtube.com/watch?v=XHQx4ajvxYk">
+                  Our Webinar
                 </a>
               </Button>,
 
