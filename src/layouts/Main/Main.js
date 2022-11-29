@@ -121,9 +121,10 @@ const Main = ({ children, themeToggler, themeMode }) => {
       href: 'https://pmsox.breezy.hr/?',
     },
     pricing: {
-      title: 'Pricing Plans',
+      title: 'Business Model',
       id: 'pricing',
-      href: 'https://pmsox-pricing.vercel.app/',
+      // href: 'https://pmsox-pricing.vercel.app/',
+      href: 'https://www.youtube.com/watch?v=XHQx4ajvxYk',
     },
     account: {
       title: 'Contact Us',
