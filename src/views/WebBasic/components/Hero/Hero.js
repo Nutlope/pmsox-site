@@ -52,7 +52,9 @@ const Hero = props => {
                 size="large"
                 // onClick={handleClick}
               >
-                <a href="https://pmsox.breezy.hr/?">Apply Now!</a>
+                <a href="https://8i3f0x8l8qy.typeform.com/to/yq2PDdpC">
+                  Apply Now!
+                </a>
               </Button>,
 
               // <Button variant="outlined" color="primary" size="large">
