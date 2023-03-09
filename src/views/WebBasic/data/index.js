@@ -255,9 +255,9 @@ export const faq = [
   {
     id: 'faq-13',
     title: 'How do I know this is legit?',
-    subtitle: 'Our new key fobs make it so easy!',
+    subtitle: 'Our new key jobs make it so easy!',
     text:
-      'Completely understood. Alternatively you can go to our website pmsox.Com and apply from there by clicking on the “Open Projects” button or send me a LinkedIn message and I will reply back with a link to use to apply.',
+      'Completely understood. Alternatively you can go to our website pmsox.Com and apply from there by clicking on the “Apply Now!” button or send me a LinkedIn message and I will reply back with a link to use to apply.',
     link: 'Check it out',
   },
 ];
