@@ -1,5 +1,15 @@
 # Pmsox site - the premiere destination for SOX Testing
 
+You might need to run these commands to ensure compatibility:
+
+1- npm update postcss postcss-safe-parser
+
+2- Set the Node.js Environment Variable
+One quick fix is to set an environment variable that tells Node.js to use a legacy provider for cryptographic operations. This can resolve the issue without needing to change Node.js versions. You can set this environment variable directly in your terminal:
+export NODE_OPTIONS=--openssl-legacy-provider
+
+3- Then run : npm run start
+
 ## Built with
 
 - React

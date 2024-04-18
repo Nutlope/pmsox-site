@@ -36,6 +36,7 @@
     "history": "^4.9.0",
     "jarallax": "^1.12.1",
     "leaflet": "^1.6.0",
+    "nodemon": "^3.1.0",
     "npm": "^7.4.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
