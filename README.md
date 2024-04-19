@@ -1,6 +1,6 @@
 # Pmsox site - the premiere destination for SOX Testing
 
-You might need to run these commands to ensure compatibility:
+You might need to run these commands to ensure compatibility (yep):
 
 1- npm update postcss postcss-safe-parser
 
